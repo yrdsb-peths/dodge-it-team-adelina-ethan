@@ -5,6 +5,10 @@ public class Hero extends Actor
 {
     boolean atTop = true;
     
+    public Hero () {
+        setImage ("images/ppl1.png");
+    }
+    
     public void act()
     {
         if (Greenfoot.mouseClicked(null)) {
