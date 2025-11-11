@@ -2,6 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Banana extends Actor
 {
+    public Banana () {
+        setImage ("images/bananas.png");
+    }
     public void act()
     {
         move(-10);
