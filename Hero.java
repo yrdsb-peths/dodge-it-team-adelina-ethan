@@ -16,6 +16,10 @@ public class Hero extends Actor
             position = position%4;
         }
         
+        if (isTouching (Apple.class) || isTouching (Banana.class)) {
+            Greenfoot.setWorld(new EndWorld());
+        }
+        
         if (position == 0) {
             setLocation (100, 50);
         } else if (position == 1) {
@@ -25,9 +29,6 @@ public class Hero extends Actor
         } else {
             setLocation (100, 350);
         }
-        
-        if (isTouching (Apple.class) || isTouching (Banana.class)) {
-            Greenfoot.setWorld(new EndWorld());
-        }
+
     }
 }
