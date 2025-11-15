@@ -11,6 +11,7 @@ public class Apple extends Actor
         if(getX() <= 0){
             resetApple();
         }
+        
     }
     public void resetApple() {
         int num = Greenfoot.getRandomNumber(2);

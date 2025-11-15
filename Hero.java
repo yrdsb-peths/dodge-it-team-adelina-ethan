@@ -17,13 +17,17 @@ public class Hero extends Actor
         }
         
         if (position == 0) {
-            setLocation (100, 100);
+            setLocation (100, 50);
         } else if (position == 1) {
             setLocation (100, 150);
         } else if (position == 2) {
             setLocation (100, 250);
         } else {
-            setLocation (100, 300);
+            setLocation (100, 350);
+        }
+        
+        if (isTouching (Apple.class) || isTouching (Banana.class)) {
+            Greenfoot.setWorld(new EndWorld());
         }
     }
 }
